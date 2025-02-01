@@ -1,0 +1,36 @@
+executar projeto 
+go run main.go
+
+
+-------------------
+uso de gin-gonic nesse projeto
+
+gin gonic é um framework web em go, utilizado para construir apis e servidores web 
+de alto desemepenho, a ferramenta oferece 
+
+estrutura de roteamento eficiente
+midddleware flexivel para autenticacao, erros 
+manipulacao de JSON 
+validacao e bind de request
+recuperacao de erros
+streaming e upload de arquivos
+suporte para websockets
+
+----------
+
+----------
+este como basicamente remove pacotes que não é utilizado e adiciona pacotes que estao sendo utilizados
+basicamente funciona como um comando coringa, últi para correcoes de imports.
+
+go mod tidy
+----------
+
+este arquivo é parecido com o arquivo lock do javascript, que mostra o histórico
+de dependencias, versoes e etc..
+
+arquivo go.sum
+
+----------
+
+se item qualquer funcao, variavel, constante, tipos de entidade
+que comeca com a letra maiscula automaticamente ela esta sendo exportada do meu package
