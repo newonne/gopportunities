@@ -52,3 +52,8 @@ seus recursos, nao e quem nem algumas linguages como javascript
 Mas por que não passar o valor diretamente?
  No caso do router, se fosse passado como valor, cada função que o recebesse trabalharia com uma cópia diferente, resultando
   em instâncias separadas e não compartilhadas.
+
+  ---------------------------
+
+  o package handler é onde ficará a lógica de cada rota, ou seja, cada rota vai lidar 
+  com suas requisicoes
