@@ -1,7 +1,6 @@
 executar projeto 
 go run main.go
 
-
 -------------------
 uso de gin-gonic nesse projeto
 
@@ -17,6 +16,9 @@ streaming e upload de arquivos
 suporte para websockets
 
 ----------
+tudo que esta no package, e acessivel ao package inteiro, nao preciso importar
+um arquivo no outro para utilizar funcoes, variaveis e etc.. isso se estiver no mesmo package
+
 
 ----------
 este como basicamente remove pacotes que não é utilizado e adiciona pacotes que estao sendo utilizados
@@ -34,3 +36,19 @@ arquivo go.sum
 
 se item qualquer funcao, variavel, constante, tipos de entidade
 que comeca com a letra maiscula automaticamente ela esta sendo exportada do meu package
+
+--------------- 
+conceito basico de ponteiro em go 
+
+quando eu defino em uma funcao que vai receber um ponteiro de algum tipo 
+eu estou acessando o `cpf`(endereco de memoria) de onde esse tipo de origem foi criado para usar
+seus recursos, nao e quem nem algumas linguages como javascript
+ que voce manda uma casa inteira ( um tipo ou objeto ) para uma funcao.
+
+ exemplo, o framework gin oferece um recurso de router, em que ele 
+ pode dizer, olha estar aqui o router e o endereco dele (ponteiro ) ai voce
+ acessa e faz o que quiser 
+
+Mas por que não passar o valor diretamente?
+ No caso do router, se fosse passado como valor, cada função que o recebesse trabalharia com uma cópia diferente, resultando
+  em instâncias separadas e não compartilhadas.
