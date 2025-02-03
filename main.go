@@ -5,8 +5,12 @@ import (
 	"github.com/newonne/gopportunities/router"
 )
 
+var (
+	logger *config.Logger
+)
+
 func main() {
-	logger := config.GetLogger("main")
+	logger = config.GetLogger("main")
 
 	// inicializa configs
 	err := config.Init()

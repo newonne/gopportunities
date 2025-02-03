@@ -57,3 +57,53 @@ Mas por que não passar o valor diretamente?
 
   o package handler é onde ficará a lógica de cada rota, ou seja, cada rota vai lidar 
   com suas requisicoes
+
+
+------------
+banco de dados do projeto 
+
+a pasta schemas do projeto e onde vai guardar as entidades de armazenamento
+
+uso da ORM GORM para banco de dados
+
+-----------
+pasta config 
+
+config - configuracao de banco de dados 
+logger - ter como visualizar os avisos da aplicacao, erro, warning e etc..
+
+
+
+parei em 2:11:30 de video // preciso resolver o problema que mostra que o banco de dados no sqlite nao 
+esta aparecendo os dados da tabela
+https://www.youtube.com/watch?v=wyEYpX5U4Vg&ab_channel=Arthur404dev
+
+
+------------
+
+métodos em golang
+
+se eu crio um método desse jeito 
+
+func (l *Logger) Info(v ...interface{}) {
+	l.info.Println(v...)
+}
+significa que a funcao Info vai receber seus parametros, porém
+ela também vai pertencer a estrutura (struct) "logger", e assim 
+consigo usar os recursos de logger dentro dela.
+
+
+ja uma funcao normal não pertence a nenhuma estrutura, e se eu quiser usar 
+alguma coisa de logger preciso passar como parametro..
+
+func PrintMessage(l *Logger, msg string) {
+    l.info.Println(msg)
+}
+
+----------------
+
+logger
+
+o arquivo logger em config serve para customizar mensagens de error, warning, info
+e etc.. para oferecer mais informações, basicamente é isso. no caso, junto com o erro
+consigo visualizar a hora e data.
