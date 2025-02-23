@@ -21,7 +21,7 @@ um arquivo no outro para utilizar funcoes, variaveis e etc.. isso se estiver no 
 
 
 ----------
-este como basicamente remove pacotes que não é utilizado e adiciona pacotes que estao sendo utilizados
+este comando basicamente remove pacotes que não é utilizado e adiciona pacotes que estao sendo utilizados
 basicamente funciona como um comando coringa, últi para correcoes de imports.
 
 go mod tidy
@@ -34,7 +34,7 @@ arquivo go.sum
 
 ----------
 
-se item qualquer funcao, variavel, constante, tipos de entidade
+se tem qualquer funcao, variavel, constante, tipos de entidade
 que comeca com a letra maiscula automaticamente ela esta sendo exportada do meu package
 
 --------------- 
@@ -74,8 +74,7 @@ logger - ter como visualizar os avisos da aplicacao, erro, warning e etc..
 
 
 
-parei em 2:11:30 de video // preciso resolver o problema que mostra que o banco de dados no sqlite nao 
-esta aparecendo os dados da tabela
+parei em 2:55:00 de video // ao rodar o comando go run main.go diz que o C compiler gcc nao foi encontrado, resolver isso
 https://www.youtube.com/watch?v=wyEYpX5U4Vg&ab_channel=Arthur404dev
 
 

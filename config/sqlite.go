@@ -1,6 +1,7 @@
 package config
 
 import (
+	"fmt"
 	"os"
 
 	"github.com/newonne/gopportunities/schemas"
@@ -10,6 +11,7 @@ import (
 
 func InitializeSQLite() (*gorm.DB, error) {
 	logger := GetLogger("sqlite")
+	fmt.Print(logger)
 	dbPath := "./db/main.db"
 	// Check if the database file exists
 	_, err := os.Stat(dbPath)
