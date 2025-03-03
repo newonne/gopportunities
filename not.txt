@@ -74,7 +74,7 @@ logger - ter como visualizar os avisos da aplicacao, erro, warning e etc..
 
 
 
-parei em 2:55:00 de video // ao rodar o comando go run main.go diz que o C compiler gcc nao foi encontrado, resolver isso
+parei em 3:25:00 de video //  adicionar o swagger
 https://www.youtube.com/watch?v=wyEYpX5U4Vg&ab_channel=Arthur404dev
 
 
@@ -106,3 +106,13 @@ logger
 o arquivo logger em config serve para customizar mensagens de error, warning, info
 e etc.. para oferecer mais informações, basicamente é isso. no caso, junto com o erro
 consigo visualizar a hora e data.
+
+
+-------------------------
+uso do swagger para documentações
+
+gin swaggor
+
+https://github.com/swaggo/gin-swagger
+
+swag init para gerar documentacao inicial
